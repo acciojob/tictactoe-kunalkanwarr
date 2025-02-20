@@ -48,3 +48,17 @@ function checkWinner() {
         return board[a] && board[a] === board[b] && board[a] === board[c];
     });
 }
+describe('Tic Tac Toe Game', () => {
+    it('Should find the input tag', () => {
+        cy.visit('http://localhost:3000'); // Adjust URL as necessary
+        cy.get('#player-1', { timeout: 10000 }).should('be.visible');
+    });
+
+    it('Shows player 1 win', () => {
+        // Your test logic here
+    });
+
+    it('Shows player 2 win', () => {
+        // Your test logic here
+    });
+});
